@@ -12,16 +12,21 @@
 
             myCar.Make = "Toyota"; // Change the make of the car
             myCar.Model = "Corolla"; // Change the model of the car
-            myCar.year = 2020; // Change the year of the car
+            myCar.Year = 2020; // Change the year of the car
             myCar.DisplayInfo(); //Display the car information
+
+            Car myCar2 = new Car("Ford", "Mustang", 2020); // Create a new Car object
+            Car myCar3 = new Car("Chevrolet", "Camaro", 2021); // Create a new Car object
+            Car.DisplayCarCount(); // Display the total number of cars created
         }
 
         internal class Car
         {
             //Fields
-            public string make;
-            public string model;
-            public int year;
+            private static int carCount = 0;
+            private string make;
+            private string model;
+            private int year;
             
             //Properties
             public string Make
@@ -54,15 +59,25 @@
                 Make = make;
                 Model = model;
                 Year = year;
+                carCount++;
             }
 
             /// <summary>
             /// Display the car information
             /// </summary>
-
+            
+               
             public void DisplayInfo()
             {
                 Console.WriteLine($"Car: {Year} {Make} {Model}");
+            }
+
+            /// <summary>
+            /// Static property to get the car count
+            /// </summary>
+            public static void DisplayCarCount()
+            {
+                Console.WriteLine($"Total cars created: {carCount}");
             }
         }
 
