@@ -20,6 +20,20 @@
             public string Model;
             public int Year;
 
+            ///<summary>
+            /// Default constructor
+            /// </summary>
+            /// <param name="make"></param>
+            /// <param name="model"></param>
+            /// <param name="year"></param>
+
+            public Car(string make, string model, int year)
+            {
+                Make = make;
+                Model = model;
+                Year = year;
+            }
+
             /// <summary>
             /// Display the car information
             /// </summary>

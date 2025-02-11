@@ -12,3 +12,4 @@
 /Users/brianna/RiderProjects/COMP003A.LectureActivity5-1/COMP003A.LectureActivity5-1/obj/Debug/net8.0/COMP003A.LectureActivity5-1.pdb
 /Users/brianna/RiderProjects/COMP003A.LectureActivity5-1/COMP003A.LectureActivity5-1/obj/Debug/net8.0/COMP003A.LectureActivity5-1.genruntimeconfig.cache
 /Users/brianna/RiderProjects/COMP003A.LectureActivity5-1/COMP003A.LectureActivity5-1/obj/Debug/net8.0/ref/COMP003A.LectureActivity5-1.dll
+/Users/brianna/RiderProjects/COMP003A.LectureActivity5-1/COMP003A.LectureActivity5-1/obj/Debug/net8.0/COMP003A.LectureActivity5-1.sourcelink.json
