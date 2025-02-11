@@ -5,20 +5,42 @@
         
         static void Main(string[] args)
         {
-            Car myCar = new Car(); // Create a new Car object
-            myCar.Make = "Toyota"; // Set the car's make
-            myCar.Model = "Supra"; // Set the car's model
-            myCar.Year = 2024; // Set the car's year
-            
+           
+
+            Car myCar = new Car("Honda", "Civic", 2021); // Create a new Car object using the constructor
             myCar.DisplayInfo(); // Display the car's information
+
+            myCar.Make = "Toyota"; // Change the make of the car
+            myCar.Model = "Corolla"; // Change the model of the car
+            myCar.year = 2020; // Change the year of the car
+            myCar.DisplayInfo(); //Display the car information
         }
 
         internal class Car
         {
             //Fields
-            public string Make;
-            public string Model;
-            public int Year;
+            public string make;
+            public string model;
+            public int year;
+            
+            //Properties
+            public string Make
+            {
+                get { return make;  }
+                set { make = value; }
+            }
+
+            public string Model
+            {
+                get { return model; }
+                set { model = value; }
+            }
+
+            public int Year
+            {
+                get { return year; }
+                set { if (value >= 1886) year = value; }
+            }
 
             ///<summary>
             /// Default constructor
